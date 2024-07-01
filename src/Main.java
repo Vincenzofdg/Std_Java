@@ -7,8 +7,6 @@ public class Main {
         movie.description = "Is renowned for its rich storytelling, complex characters, and detailed world-building. It has significantly influenced the fantasy genre and was adapted into a critically acclaimed film in 2001.";
         movie.timeMinute = 178;
         movie.plan = true;
-//        movie.rate = 30;
-//        movie.totalRate = 2;
 
         movie.showFilmFile();
 
@@ -16,7 +14,6 @@ public class Main {
         movie.rateMovie(40);
         movie.rateMovie(67);
         movie.rateMovie(59);
-
 
         System.out.println(movie.getTotalRate());
         System.out.println(movie.rateAvg());
