@@ -1,3 +1,5 @@
+import com.study.cinehub.models.Film;
+
 public class Main {
     public static void main(String[] args) {
         Film movie = new Film();
