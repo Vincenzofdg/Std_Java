@@ -1,6 +1,8 @@
 package com.study.cinehub.models;
 
-public class Film extends Title {
+import com.study.cinehub.interfaces.Classification;
+
+public class Film extends Title implements Classification {
     String director;
 
     // Getters
@@ -11,5 +13,10 @@ public class Film extends Title {
     // Setters
     public void setDirector(String director) {
         this.director = director;
+    }
+
+    @Override
+    public int getClassification() {
+        return (int) getRateAvarage() / 2;
     }
 }

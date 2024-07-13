@@ -10,8 +10,14 @@ public class Title {
     private int timeMinute;
 
     public void showTitle () {
-        System.out.println("Film name: " + name);
-        System.out.println("Release year: " + releaseYear);
+        System.out.println("Title name: " + name);
+        System.out.println("Description: " + description);
+
+        System.out.println("Released year: " + releaseYear);
+        System.out.println("Is on plan: " + onPlan);
+        System.out.println("Rate: " + rate + "/10");
+        System.out.println("Total Rate: " + totalRate);
+        System.out.println("Duration: " + timeMinute);
     }
 
     public void rateTitle (int newRate) {

@@ -1,10 +1,10 @@
 package com.study.cinehub.models;
 
 public class Serie extends Title {
-    int seasons;
-    int epPerSeason;
-    int minutesPerEp;
-    boolean active;
+    private int seasons;
+    private int epPerSeason;
+    private int minutesPerEp;
+    private boolean active;
 
     // Getters
     public int getSeasons() {
@@ -42,7 +42,20 @@ public class Serie extends Title {
 
     @Override
     public int getTimeMinute() {
-//        return super.getTimeMinute();
         return seasons * epPerSeason * minutesPerEp;
+    }
+
+    public void setTimeMinute() {
+        int totalCalc = seasons * epPerSeason * minutesPerEp;
+        super.setTimeMinute(totalCalc);
+    }
+
+    public void showTitle() {
+        super.showTitle();
+
+        System.out.println("Number os season: " + seasons);
+        System.out.println("Ep per season: " + epPerSeason);
+        System.out.println("Minutes per EP: " + minutesPerEp);
+        System.out.println("Is active: " + active);
     }
 }

@@ -9,7 +9,6 @@ public class SumTime {
     }
 
     public void addTitle(Title title) {
-        totalTime += title.getTimeMinute();
+        this.totalTime += title.getTimeMinute();
     }
-
 }
