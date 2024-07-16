@@ -17,6 +17,6 @@ public class Film extends Title implements Classification {
 
     @Override
     public int getClassification() {
-        return (int) getRateAvarage() / 2;
+        return (int) (5 * getRateAvarage()) / 10;
     }
 }

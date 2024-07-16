@@ -1,5 +1,7 @@
 package com.study.cinehub.models;
 
+import java.text.DecimalFormat;
+
 public class Title {
     private String name;
     private String description;
@@ -26,7 +28,12 @@ public class Title {
     }
 
     public float getRateAvarage () {
-        return rate / totalRate;
+        DecimalFormat df = new DecimalFormat("0.00");
+
+        float notFormatRate = (rate / totalRate);
+        String formateRateString = df.format(notFormatRate);
+
+        return Float.parseFloat(formateRateString);
     }
 
     // Getters

@@ -1,6 +1,8 @@
 package com.study.cinehub.models;
 
-public class Serie extends Title {
+import com.study.cinehub.interfaces.Classification;
+
+public class Serie extends Title implements Classification {
     private int seasons;
     private int epPerSeason;
     private int minutesPerEp;
@@ -57,5 +59,10 @@ public class Serie extends Title {
         System.out.println("Ep per season: " + epPerSeason);
         System.out.println("Minutes per EP: " + minutesPerEp);
         System.out.println("Is active: " + active);
+    }
+
+    @Override
+    public int getClassification() {
+        return (int) (5 * getRateAvarage()) / 10;
     }
 }
