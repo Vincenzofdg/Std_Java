@@ -3,21 +3,34 @@ import com.study.cinehub.calculation.SumTime;
 import com.study.cinehub.models.Film;
 import com.study.cinehub.models.Serie;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
-        Film newFilm = new Film();
+        Film firstFilm = new Film();
+        Film secondFilm = new Film();
         Serie newSerie = new Serie();
 
         // The Lord of the Rings (Film)
-        newFilm.setName("The Lord of the Rings");
-        newFilm.setDescription("In the Second Age of Middle-earth, the lords of Elves, Dwarves, and Men are given Rings of Power. Unbeknownst to them, the Dark Lord Sauron forges the One Ring in Mount Doom, instilling into it a great part of his power to dominate the other Rings and conquer Middle-earth.");
-        newFilm.setReleaseYear(2001);
-        newFilm.setOnPlan(true);
-        newFilm.setRate(835);
-        newFilm.setTotalRate(87);
-        newFilm.setTimeMinute(558);
+        firstFilm.setName("The Lord of the Rings");
+        firstFilm.setDescription("In the Second Age of Middle-earth, the lords of Elves, Dwarves, and Men are given Rings of Power. Unbeknownst to them, the Dark Lord Sauron forges the One Ring in Mount Doom, instilling into it a great part of his power to dominate the other Rings and conquer Middle-earth.");
+        firstFilm.setReleaseYear(2001);
+        firstFilm.setOnPlan(true);
+        firstFilm.setRate(835);
+        firstFilm.setTotalRate(87);
+        firstFilm.setTimeMinute(558);
 
-        newFilm.setDirector("Peter Jackson");
+        // Interstellar (Film)
+        secondFilm.setName("Interstellar");
+        secondFilm.setDescription("A team travels through a wormhole to find a new habitable planet for humanity.");
+        secondFilm.setReleaseYear(2014);
+        secondFilm.setOnPlan(true);
+        secondFilm.setRate(735);
+        secondFilm.setTotalRate(77);
+        secondFilm.setTimeMinute(558);
+
+        secondFilm.setDirector("Christopher Nolan");
 
         // Dr. Stone (Series)
         newSerie.setName("Dr. Stone");
@@ -38,15 +51,26 @@ public class Main {
 //        newSerie.showTitle();
 
         SumTime calculator = new SumTime();
-        calculator.addTitle(newFilm);
+        calculator.addTitle(firstFilm);
+        calculator.addTitle(secondFilm);
         calculator.addTitle(newSerie);
 
 //        System.out.println(calculator.getTotalTime());
 
         RecommendationFilter filter = new RecommendationFilter();
 
-        filter.filter(newFilm);
+//        filter.filter(firstFilm);
+//        filter.filter(newSerie);
 
-        filter.filter(newSerie);
+        ArrayList<Film> filmList = new ArrayList<>();
+        filmList.add(firstFilm);
+        filmList.add(secondFilm);
+
+        System.out.println(filmList.size());
+        System.out.println(filmList.get(1).getName());
+
+        System.out.println(filmList.get(0).toString());
+
+
     }
 }
