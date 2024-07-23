@@ -8,27 +8,26 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Film firstFilm = new Film();
-        Film secondFilm = new Film();
+        Film firstFilm = new Film("The Lord of the Rings");
         Serie newSerie = new Serie();
 
         // The Lord of the Rings (Film)
-        firstFilm.setName("The Lord of the Rings");
-        firstFilm.setDescription("In the Second Age of Middle-earth, the lords of Elves, Dwarves, and Men are given Rings of Power. Unbeknownst to them, the Dark Lord Sauron forges the One Ring in Mount Doom, instilling into it a great part of his power to dominate the other Rings and conquer Middle-earth.");
-        firstFilm.setReleaseYear(2001);
-        firstFilm.setOnPlan(true);
-        firstFilm.setRate(835);
-        firstFilm.setTotalRate(87);
-        firstFilm.setTimeMinute(558);
+//        firstFilm.setName("The Lord of the Rings");
+//        firstFilm.setDescription("In the Second Age of Middle-earth, the lords of Elves, Dwarves, and Men are given Rings of Power. Unbeknownst to them, the Dark Lord Sauron forges the One Ring in Mount Doom, instilling into it a great part of his power to dominate the other Rings and conquer Middle-earth.");
+//        firstFilm.setReleaseYear(2001);
+//        firstFilm.setOnPlan(true);
+//        firstFilm.setRate(835);
+//        firstFilm.setTotalRate(87);
+//        firstFilm.setTimeMinute(558);
 
         // Interstellar (Film)
-        secondFilm.setName("Interstellar");
-        secondFilm.setDescription("A team travels through a wormhole to find a new habitable planet for humanity.");
-        secondFilm.setReleaseYear(2014);
-        secondFilm.setOnPlan(true);
-        secondFilm.setRate(735);
-        secondFilm.setTotalRate(77);
-        secondFilm.setTimeMinute(558);
+//        secondFilm.setName("Interstellar");
+//        secondFilm.setDescription("A team travels through a wormhole to find a new habitable planet for humanity.");
+//        secondFilm.setReleaseYear(2014);
+//        secondFilm.setOnPlan(true);
+//        secondFilm.setRate(735);
+//        secondFilm.setTotalRate(77);
+//        secondFilm.setTimeMinute(558);
 
         secondFilm.setDirector("Christopher Nolan");
 

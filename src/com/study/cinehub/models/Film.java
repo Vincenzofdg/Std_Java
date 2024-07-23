@@ -5,6 +5,11 @@ import com.study.cinehub.interfaces.Classification;
 public class Film extends Title implements Classification {
     String director;
 
+    // Constructor
+    public Film(String name) {
+        this.setName(name);
+    }
+
     // Getters
     public String getDirector() {
         return director;
