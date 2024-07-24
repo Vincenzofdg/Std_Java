@@ -11,4 +11,11 @@ public class SumTime {
     public void addTitle(Title title) {
         this.totalTime += title.getTimeMinute();
     }
+
+    public void showTotalTime () {
+        int hours = totalTime / 60;
+        int minutes = totalTime % 60;
+
+        System.out.println(hours + " hours and " + minutes + " minutes");
+    }
 }

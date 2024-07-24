@@ -5,9 +5,11 @@ import com.study.cinehub.interfaces.Classification;
 public class Film extends Title implements Classification {
     String director;
 
-    // Constructor
-    public Film(String name) {
-        this.setName(name);
+    // This constructor must have the attributes from de super (TITLE)
+    public Film (String name, String description, int releaseYear, int duration) {
+        super(name, description, releaseYear);
+
+        setTimeMinute(duration);
     }
 
     // Getters
@@ -27,6 +29,6 @@ public class Film extends Title implements Classification {
 
     @Override
     public String toString() {
-        return "Film: "  + this.getName() + " (" + this.getReleaseYear() + ")";
+        return this.getName() + " (" + this.getReleaseYear() + ")";
     }
 }

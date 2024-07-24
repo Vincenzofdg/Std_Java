@@ -7,7 +7,10 @@
     <list default="true" id="e8ced959-770e-446b-8f4f-6cc7c6593430" name="Changes" comment="metodo privete e public">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/study/cinehub/calculation/SumTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/study/cinehub/calculation/SumTime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/study/cinehub/models/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/study/cinehub/models/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/study/cinehub/models/Serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/study/cinehub/models/Serie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/study/cinehub/models/Title.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/study/cinehub/models/Title.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

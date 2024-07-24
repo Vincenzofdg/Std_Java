@@ -11,6 +11,12 @@ public class Title {
     private int totalRate;
     private int timeMinute;
 
+    public Title (String name, String description, int releaseYear) {
+        this.name = name;
+        this.description = description;
+        this.releaseYear = releaseYear;
+    }
+
     public void showTitle () {
         System.out.println("Title name: " + name);
         System.out.println("Description: " + description);

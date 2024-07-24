@@ -8,6 +8,17 @@ public class Serie extends Title implements Classification {
     private int minutesPerEp;
     private boolean active;
 
+    // This constructor must have the attributes from de super (TITLE)
+    public Serie (String name, String description, int releaseYear, int epPerSeason, int seasons, int minutesPerEp) {
+        super(name, description, releaseYear);
+
+        this.epPerSeason = epPerSeason;
+        this.seasons = seasons;
+        this.minutesPerEp = minutesPerEp;
+
+        this.setTimeMinute();
+    }
+
     // Getters
     public int getSeasons() {
         return seasons;
