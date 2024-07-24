@@ -19,7 +19,7 @@ public class Main {
                 "A team travels through a wormhole to find a new habitable planet for humanity.",
                 2014,
                 169
-                );
+        );
 
         Serie newSerie = new Serie(
                 "Dr. Stone",
